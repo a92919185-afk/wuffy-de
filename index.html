@@ -106,8 +106,8 @@
                         star: '#FFB800',
                         status: { green: '#1DA15F' },
                         brand: { 
-                            blue: '#4AADE5',
-                            darkBlue: '#2D89C7'
+                            primary: '#FF9D42',
+                            secondary: '#FF6B00'
                         },
                         depth: { 900: '#000000', 800: '#606770', 950: '#000000' }
                     }
@@ -134,7 +134,7 @@
         .modal.active { display: flex; animation: fadeIn 0.3s ease-out forwards; }
         @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
         .accent-underline { position: relative; display: inline-block; }
-        .accent-underline::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: #4AADE5; border-radius: 2px; }
+        .accent-underline::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: #FF9D42; border-radius: 2px; }
     </style>
 </head>
 
@@ -162,7 +162,7 @@
                     <a href="#reviews" class="hover:text-black transition">Erfahrungen</a>
                     <a href="#faq" class="hover:text-black transition">FAQ</a>
                 </div>
-                <!-- Button Hidden on Mobile -->
+                <!-- Hidden on Mobile per request -->
                 <a href="#gateway"
                     class="hidden md:inline-flex btn-magnetic bg-black hover:bg-zinc-800 text-white text-[13px] font-bold px-5 py-2.5 rounded-[2rem] shadow-lg">
                     JETZT ENTDECKEN
@@ -299,7 +299,7 @@
         </div>
     </section>
 
-    <!-- 4b. START OPTIONS -->
+    <!-- 4b. START OPTIONS (Updated Design: Warm Vibrant Amber) -->
     <section id="start-options" class="py-24 bg-white border-t border-gray-100">
         <div class="max-w-3xl mx-auto px-4 md:px-8 text-center">
             <div class="reveal">
@@ -309,29 +309,29 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto reveal" style="transition-delay:0.2s;">
-                <!-- Option 1: Checkout (Vibrant Brand Gradient) -->
+                <!-- Option 1: Checkout (Vibrant Warm Amber Gradient) -->
                 <a href="https://www.fasttrack36.com/PHPWHDRK/2QT8W4PW/?uid=47332" target="_blank" rel="noopener"
-                    class="group relative p-10 rounded-[3rem] bg-gradient-to-br from-brand-blue to-brand-darkBlue text-white border-0 shadow-[0_20px_50px_rgba(74,173,229,0.3)] hover:shadow-[0_25px_60px_rgba(74,173,229,0.5)] hover:scale-[1.03] transition-all duration-500 overflow-hidden">
+                    class="group relative p-10 rounded-[3rem] bg-gradient-to-br from-[#FFB800] to-[#FF8A00] text-white border-0 shadow-[0_20px_50px_rgba(255,184,0,0.3)] hover:shadow-[0_25px_60px_rgba(255,184,0,0.5)] hover:scale-[1.03] transition-all duration-500 overflow-hidden">
                     <div class="relative z-10 text-center">
-                        <!-- Replacement Image for Bag Icon -->
-                        <div class="w-28 h-28 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/30 group-hover:scale-110 transition-transform duration-500 shadow-lg bg-white/10">
+                        <!-- Wuffy Toy Photo -->
+                        <div class="w-28 h-28 mx-auto mb-6 rounded-3xl overflow-hidden border-4 border-white/50 group-hover:scale-110 transition-transform duration-500 shadow-xl bg-white/20">
                             <img src="images/wuffy-toy.png" alt="Wuffy Toy" class="w-full h-full object-cover">
                         </div>
-                        <h3 class="text-3xl font-black uppercase tracking-tight mb-3">Jetzt Bestellen</h3>
-                        <p class="text-sm text-white/90 mb-8 leading-relaxed font-medium">-75% Rabatt sichern & Gratis Versand genießen.</p>
-                        <div class="inline-flex items-center gap-3 bg-white text-brand-darkBlue px-10 py-4 rounded-2xl font-black text-lg uppercase tracking-wider shadow-xl hover:bg-gray-50 transition-colors">
+                        <h3 class="text-3xl font-black uppercase tracking-tight mb-3 drop-shadow-md">Jetzt Bestellen</h3>
+                        <p class="text-sm text-white/95 mb-8 leading-relaxed font-bold">-75% Rabatt sichern & Gratis Versand genießen.</p>
+                        <div class="inline-flex items-center gap-3 bg-white text-[#FF8A00] px-10 py-4 rounded-2xl font-black text-lg uppercase tracking-wider shadow-2xl hover:bg-gray-100 transition-colors">
                             <span>KAUFEN</span>
                             <i class="fa-solid fa-arrow-right text-sm"></i>
                         </div>
                     </div>
                 </a>
 
-                <!-- Option 2: Product Page Link (Clean & Professional) -->
+                <!-- Option 2: Product Page Link (Clean White with Amber Accents) -->
                 <a href="https://www.fasttrack36.com/PHPWHDRK/2QT8W4PW/?uid=47331" target="_blank" rel="noopener"
-                    class="group relative p-10 rounded-[3rem] bg-white text-black border border-gray-100 shadow-lg hover:shadow-xl hover:scale-[1.03] hover:border-brand-blue/30 transition-all duration-500 overflow-hidden">
+                    class="group relative p-10 rounded-[3rem] bg-white text-black border border-gray-100 shadow-xl hover:shadow-2xl hover:scale-[1.03] hover:border-[#FFB800]/50 transition-all duration-500 overflow-hidden">
                     <div class="relative z-10 text-center">
-                        <div class="w-20 h-20 mx-auto mb-6 bg-gray-50 rounded-3xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 border border-gray-100">
-                            <i class="fa-solid fa-magnifying-glass text-3xl text-brand-blue"></i>
+                        <div class="w-20 h-20 mx-auto mb-6 bg-gray-50 rounded-3xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 border border-gray-100 shadow-inner">
+                            <i class="fa-solid fa-magnifying-glass text-3xl text-[#FFB800]"></i>
                         </div>
                         <h3 class="text-2xl font-black uppercase tracking-tight mb-3">Mehr Erfahren</h3>
                         <p class="text-sm text-gray-500 mb-8 leading-relaxed">Alle Details, Fotos und technische Daten ansehen.</p>
@@ -354,19 +354,19 @@
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 reveal" style="transition-delay:0.2s;">
                 <div class="group text-center p-8 rounded-[3rem] bg-gray-50 border border-gray-100 hover:bg-white hover:shadow-xl transition-all">
-                    <div class="w-16 h-16 mx-auto mb-5 bg-gray-100 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-bolt text-brand-blue text-xl"></i></div>
+                    <div class="w-16 h-16 mx-auto mb-5 bg-gray-100 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-bolt text-[#FFB800] text-xl"></i></div>
                     <p class="font-black text-sm uppercase">Sofort bereit</p>
                 </div>
                 <div class="group text-center p-8 rounded-[3rem] bg-gray-50 border border-gray-100 hover:bg-white hover:shadow-xl transition-all">
-                    <div class="w-16 h-16 mx-auto mb-5 bg-gray-100 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-microchip text-brand-blue text-xl"></i></div>
+                    <div class="w-16 h-16 mx-auto mb-5 bg-gray-100 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-microchip text-[#FFB800] text-xl"></i></div>
                     <p class="font-black text-sm uppercase">KI-Technik</p>
                 </div>
                 <div class="group text-center p-8 rounded-[3rem] bg-gray-50 border border-gray-100 hover:bg-white hover:shadow-xl transition-all">
-                    <div class="w-16 h-16 mx-auto mb-5 bg-gray-100 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-hand text-brand-blue text-xl"></i></div>
+                    <div class="w-16 h-16 mx-auto mb-5 bg-gray-100 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-hand text-[#FFB800] text-xl"></i></div>
                     <p class="font-black text-sm uppercase">Berührung</p>
                 </div>
                 <div class="group text-center p-8 rounded-[3rem] bg-gray-50 border border-gray-100 hover:bg-white hover:shadow-xl transition-all">
-                    <div class="w-16 h-16 mx-auto mb-5 bg-gray-100 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-lungs text-brand-blue text-xl"></i></div>
+                    <div class="w-16 h-16 mx-auto mb-5 bg-gray-100 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-lungs text-[#FFB800] text-xl"></i></div>
                     <p class="font-black text-sm uppercase">Allergenfrei</p>
                 </div>
             </div>
@@ -404,7 +404,6 @@
         <div class="max-w-3xl mx-auto px-4 md:px-8">
             <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10 text-depth-950 reveal">Häufig gestellte Fragen</h2>
             <div class="space-y-3 reveal" style="transition-delay:0.2s;">
-                <!-- FAQ 1 -->
                 <div class="faq-item border border-gray-200 rounded-[1.5rem] bg-gray-50 overflow-hidden cursor-pointer">
                     <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition" onclick="toggleFaq(this)">
                         <h4 class="font-bold text-[15px]">Ist Wuffy sicher für Kinder mit Allergien?</h4>
@@ -414,7 +413,6 @@
                         <p>Ja. Wuffy ist komplett allergenfrei — kein Fell, kein Staub, keine Tierhaare. Alle Materialien sind CE-zertifiziert und entsprechen den EU-Sicherheitsstandards.</p>
                     </div>
                 </div>
-                <!-- FAQ 2 -->
                 <div class="faq-item border border-gray-200 rounded-[1.5rem] bg-gray-50 overflow-hidden cursor-pointer">
                     <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition" onclick="toggleFaq(this)">
                         <h4 class="font-bold text-[15px]">Braucht Wuffy WLAN oder eine App?</h4>
@@ -424,7 +422,6 @@
                         <p>Nein. Wuffy funktioniert komplett offline — ohne WLAN, ohne App, ohne Datenweitergabe. Einfach einschalten und losspielen.</p>
                     </div>
                 </div>
-                <!-- FAQ 3 -->
                 <div class="faq-item border border-gray-200 rounded-[1.5rem] bg-gray-50 overflow-hidden cursor-pointer">
                     <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition" onclick="toggleFaq(this)">
                         <h4 class="font-bold text-[15px]">Wie robust ist die Verarbeitung?</h4>
@@ -434,7 +431,6 @@
                         <p>Wuffy besteht aus hochwertigen, langlebigen Materialien mit handgefertigten Details. Der interne Mechanismus ist auf tausende Spielstunden ausgelegt.</p>
                     </div>
                 </div>
-                <!-- FAQ 4 -->
                 <div class="faq-item border border-gray-200 rounded-[1.5rem] bg-gray-50 overflow-hidden cursor-pointer">
                     <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition" onclick="toggleFaq(this)">
                         <h4 class="font-bold text-[15px]">Ab welchem Alter ist Wuffy geeignet?</h4>
@@ -444,7 +440,6 @@
                         <p>Wuffy ist für Kinder ab 3 Jahren geeignet. Alle Materialien und Kleinteile entsprechen den EU-Spielzeugrichtlinien (EN 71).</p>
                     </div>
                 </div>
-                <!-- FAQ 5 -->
                 <div class="faq-item border border-gray-200 rounded-[1.5rem] bg-gray-50 overflow-hidden cursor-pointer">
                     <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition" onclick="toggleFaq(this)">
                         <h4 class="font-bold text-[15px]">Wie lange hält der Akku?</h4>
@@ -454,7 +449,6 @@
                         <p>Bei normaler Nutzung hält der Akku ca. 2–3 Stunden. Die Ladezeit beträgt etwa 1 Stunde über USB-C.</p>
                     </div>
                 </div>
-                <!-- FAQ 6 -->
                 <div class="faq-item border border-gray-200 rounded-[1.5rem] bg-gray-50 overflow-hidden cursor-pointer">
                     <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition" onclick="toggleFaq(this)">
                         <h4 class="font-bold text-[15px]">Kann Wuffy wirklich Empathie bei Kindern fördern?</h4>
@@ -464,7 +458,6 @@
                         <p>Ja. Durch die realistische Interaktion lernen Kinder, Verantwortung zu übernehmen und Fürsorge zu zeigen — pädagogisch wertvoll.</p>
                     </div>
                 </div>
-                <!-- FAQ 7 -->
                 <div class="faq-item border border-gray-200 rounded-[1.5rem] bg-gray-50 overflow-hidden cursor-pointer">
                     <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition" onclick="toggleFaq(this)">
                         <h4 class="font-bold text-[15px]">Was ist, wenn ich nicht zufrieden bin?</h4>
